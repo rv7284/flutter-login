@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_login/login_01.dart';
+import 'package:flutter_login/login_02.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,7 +35,17 @@ class MyHomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => Login01()),
                 );
               },
-            )
+            ),
+            SizedBox(height: 20),
+            PrimaryButton(
+              title: 'Login 02',
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Login02()),
+                );
+              },
+            ),
           ],
         ),
       ),
